@@ -1,0 +1,13 @@
+FROM registry.ott-consult.de/oc/base
+MAINTAINER Joern Ott <joern.ott@ott-consult.de>
+
+ENV PHP_VERSION=56u \
+    PHO_OPTIONS=""
+
+COPY src /
+
+RUN /tmp/install/oc-php-fpm.sh
+
+EXPOSE 9000
+
+ENTRYPOINT /entrypoint
