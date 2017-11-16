@@ -2,7 +2,7 @@ FROM registry.ott-consult.de/oc/base
 MAINTAINER Joern Ott <joern.ott@ott-consult.de>
 
 ENV PHP_VERSION=56u \
-    PHO_OPTIONS=""
+    PHP_OPTIONS=""
 
 COPY src /
 
