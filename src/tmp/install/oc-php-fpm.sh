@@ -5,8 +5,7 @@ set -x
 source /tmp/install/functions.sh
 add_repos IUS EPEL
 
-install_software libkadm5 \
-                 php${PHP_VERSION}-fpm \
+install_software php${PHP_VERSION}-fpm \
                  php${PHP_VERSION}-cli \
                  php${PHP_VERSION}-bcmath \
                  php${PHP_VERSION}-common \
@@ -28,7 +27,6 @@ install_software libkadm5 \
                  php${PHP_VERSION}-pecl-geoip \
                  php${PHP_VERSION}-pecl-imagick \
                  php${PHP_VERSION}-pecl-jsonc \
-                 php${PHP_VERSION}-pecl-krb5 \
                  php${PHP_VERSION}-pecl-lzf \
                  php${PHP_VERSION}-pecl-memcached \
                  php${PHP_VERSION}-pecl-mongo \
